@@ -7,6 +7,8 @@ if (isset($_GET["date1"])) {$date1 = $_GET["date1"];}
 else {$date1 = "2009-07-06";}
 if (isset($_GET["date2"])) {$date2 = $_GET["date2"];}
 else {$date2 = "";}
+if (isset($_GET["date3"])) {$date3 = $_GET["date3"];}
+else {$date3 = "";}
 if (isset($_GET["days"])) {$days = $_GET["days"];}
 else {$days = "180";}
 ?>
@@ -24,7 +26,7 @@ else {$days = "180";}
 		var so = new SWFObject("/amcharts/amline/amline.swf", "amline", "800", "450", "8", "#FFFFFF");
 		so.addVariable("path", "/amcharts/amline");
 		so.addVariable("settings_file", encodeURIComponent("Watts-days.xml?rand=<?php echo mktime();?>"));                // you can set two or more different settings files here (separated by commas)
-		so.addVariable("data_file", encodeURIComponent("Watts-days-data.php?date1=<?php echo $date1 ?>&days=<?php echo $days ?>&date2=<?php echo $date2 ?>"));
+		so.addVariable("data_file", encodeURIComponent("Watts-days-data.php?date1=<?php echo $date1 ?>&days=<?php echo $days ?>&date2=<?php echo $date2 ?>&date3=<?php echo $date3 ?>"));
 		
 //	so.addVariable("chart_data", encodeURIComponent("data in CSV or XML format"));                    // you can pass chart data as a string directly from this file
 //	so.addVariable("chart_settings", encodeURIComponent("<settings>...</settings>"));                 // you can pass chart settings as a string directly from this file
