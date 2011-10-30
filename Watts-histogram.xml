@@ -458,6 +458,38 @@
         <![CDATA[{value} Wh]]>
       </balloon_text>
     </graph>
+
+    <graph gid="7">                                                            
+      <axis>left</axis>
+      <title>Period 2</title>
+      <color>#0088CC</color>
+      <color_hover>#000000</color_hover>
+      <line_width>2</line_width>
+      <bullet></bullet>
+      <bullet_size></bullet_size>
+      <bullet_color></bullet_color>
+      <bullet_alpha>100</bullet_alpha>
+      <selected>true</selected>                     
+      <balloon_text>
+        <![CDATA[{value} Wh]]>
+      </balloon_text>
+    </graph>
+
+    <graph gid="8">                                                            
+      <axis>right</axis>
+      <title>Cummulative</title>
+      <color>#008899</color>
+      <color_hover>#000000</color_hover>
+      <line_width>2</line_width>
+      <bullet>round</bullet>
+      <bullet_size>5</bullet_size>
+      <bullet_color></bullet_color>
+      <bullet_alpha>80</bullet_alpha>
+      <selected>true</selected>                     
+      <balloon_text>
+        <![CDATA[{value} Wh]]>
+      </balloon_text>
+    </graph>
     </graphs>
 
 	<guides>	                                                 <!-- guides are straight lines drawn through all plot area at a give value. Can also be filled with color -->

@@ -9,6 +9,10 @@ if (isset($_GET["date2"])) {$date2 = $_GET["date2"];}
 else {$date2 = "";}
 if (isset($_GET["date3"])) {$date3 = $_GET["date3"];}
 else {$date3 = "";}
+if (isset($_GET["date4"])) {$date4 = $_GET["date4"];}
+else {$date4 = "";}
+if (isset($_GET["date5"])) {$date5 = $_GET["date5"];}
+else {$date5 = "";}
 if (isset($_GET["days"])) {$days = $_GET["days"];}
 else {$days = "180";}
 if (isset($_GET["watts"])) {$watts = $_GET["watts"];}
@@ -28,7 +32,7 @@ else {$watts = 100;}
 		var so = new SWFObject("/amcharts/amline/amline.swf", "amline", "800", "450", "8", "#FFFFFF");
 		so.addVariable("path", "/amcharts/amline");
 		so.addVariable("settings_file", encodeURIComponent("Watts-histogram.xml?rand=<?php echo mktime();?>"));                // you can set two or more different settings files here (separated by commas)
-		so.addVariable("data_file", encodeURIComponent("Watts-histogram-data.php?date1=<?php echo $date1 ?>&days=<?php echo $days ?>&date2=<?php echo $date2 ?>&date3=<?php echo $date3 ?>&watts=<?php echo $watts ?>"));
+		so.addVariable("data_file", encodeURIComponent("Watts-histogram-data.php?date1=<?php echo $date1 ?>&days=<?php echo $days ?>&date2=<?php echo $date2 ?>&date3=<?php echo $date3 ?>&date4=<?php echo $date4 ?>&date5=<?php echo $date5 ?>&watts=<?php echo $watts ?>"));
 		
 //	so.addVariable("chart_data", encodeURIComponent("data in CSV or XML format"));                    // you can pass chart data as a string directly from this file
 //	so.addVariable("chart_settings", encodeURIComponent("<settings>...</settings>"));                 // you can pass chart settings as a string directly from this file
